@@ -15,8 +15,9 @@ body{
 background-color: #111111;
   position: fixed; 
     top: 0;
-    left: 5;
+    left: 0;
    width: 100%;
+   height: 70px;
  z-index: 4;
 }
 .parent-div{
@@ -53,17 +54,11 @@ left: 50px;
 /* notification nav */
 .float-op{
     position: relative;
-    top: -105px;
-    left: 1200px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 40px;
-    width: 150px;
+   top: -37px;
+    left:-120px;
 }
 .search-div{
-    margin: -30px 10px;
-    position: relative;
-    left: -60px;
+    border: 3px solid green;
 }
 .search{
     margin: 0 auto;
@@ -72,7 +67,7 @@ left: 50px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    position: relative;
+   
     
 }
 .search::after{
@@ -88,49 +83,12 @@ left: 50px;
     
 }
 
-/* .notify-bell{
-    margin: -30px 90px;
-    position: relative;
-    left: 50px;
-} */
-/* .bell{
-    top: 40px;
-    transform: translateY(-50%);
-    transform-origin: 50% 0%;
-    position: absolute;
-    background: #FFFFFF;
-    width: 15px;
-    height: 10px;
-    border-radius: 28px 28px 0 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+.user-img{
+     position: relative;
+   top: -40px;
+    left:6px; 
 }
-
-.bell:before{
-    content: "";
-    position: absolute;
-    border-top-left-radius: 1100px;
-    border-top-right-radius: 1100px;
-    width: 22px;
-    height: 10px;
-    top:70%;
-    left:-23%;
-    background-color: #FFFFFF;
-    
-}
-.bell:after{
-    content: "";
-    position: absolute;
-    border-radius: 100px;
-    width: 12px;
-    height: 12px;
-    top:109%;
-    left:10%;
-    background-color: #FFFFFF;   
-    z-index: -1;
-} */
-.float-op img{
+.user-img img{
  border-radius: 5px;  
 }
 
@@ -141,7 +99,7 @@ left: 50px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     position: absolute;
-    margin: 10px -15px;
+    margin: 10px -0px;
     
 }
 /* notificatin dropdown */
@@ -154,7 +112,7 @@ left: 50px;
     height: 10px;
     border-radius: 28px 28px 0 0;
    
-    
+    z-index: 4;
   }
   
   .dropbtn::after{
@@ -183,9 +141,9 @@ left: 50px;
   .dropdown2 {
     position: relative;
     top: -35px;
-    left:-116px;
+    left:-66px;
     display: inline-block;
-    
+    z-index: 3;
   }
   
   .dropdown-content2 {
@@ -251,14 +209,13 @@ margin-left: 10px;
   }
 .logo-and-text{
     position: relative;
-   
     margin-left: 40px;
     margin-top: 60px;
-   top: -600px;
+   top: -630px;
   
 }
 .between-img{
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     
 }
@@ -300,7 +257,7 @@ width: 95px;
 .ratin-div{
     position: relative;
     top: -670px;
-    margin-left: 1150px;
+    
 }
 /* rating */
 .maturity-number{
@@ -321,17 +278,17 @@ width: 95px;
 .all-drama{
     background-color: #141414;
     position: relative;
-    top: -580px;;
+    top: -540px;
     
 }
 /* drama collection */
 .tv-dramas{
     margin-left: 40px;
-    
+    margin-top: 70px;
 }
 .tvd-h2{
     position: relative;;
-    top: -35px;
+    top: -45px;
 }
 .div-width{
     width: 100%;
@@ -358,7 +315,7 @@ width: 95px;
 .sec-next{
     cursor: pointer;
     position: relative;;
-    top: -14px;
+    top: 16px;
     left: 290px;
     width: auto;
     padding: 16px;
@@ -375,7 +332,7 @@ width: 95px;
 .prev, .next {
     cursor: pointer;
     position: relative;;
-    top: -90px;
+    top: -100px;
     left: -10px;
     width: auto;
     padding: 26px;
@@ -405,6 +362,7 @@ width: 95px;
 /* Trending now collection */
 .trending-now{
     margin-left: 40px;
+    margin-top: -40px;
 }
 .second-all-movie-div img{
     border-radius: 4px;
@@ -426,7 +384,7 @@ width: 95px;
 /* My list collection */
 .my-list{
     margin-left: 40px;
-    
+    margin-top: -70px;
 }
 .second-div-list img{
     border-radius: 4px;
@@ -447,6 +405,7 @@ width: 95px;
 /* only on netflix colllection */
 .only-on-netflix{
     margin-left: 40px;
+    margin-top: -40px;
 }
 .netflix-all-movie-div img{
     border-radius: 4px;
@@ -857,6 +816,7 @@ font-size: 14rem;
     font-size: 13px;
     color: #676767;
     margin-top: 40px;
+    
   }
   .grid-item {
     padding: 15px;
@@ -869,10 +829,7 @@ font-size: 14rem;
       margin-left: 10px;
       font-size: large;
   }
-  .p-grid{
-    border: 2px solid #585858; width: 130px;
-    margin-left: 210px;
-  }
+  
 /* media quries */
 @media (max-width: 768px) {
     .dropdown{
@@ -887,12 +844,13 @@ font-size: 14rem;
         display: block;
         position:relative;
         top:  -10px;
+        margin-left: -40px;
     }
     .dropdown-content{
         display: none;
         position: absolute;
         top: 20px;
-        left: -100px;
+        left: -135px;
         height: 300px;
         background-color: rgba(0, 0, 0, .5);
         min-width: 260px;
@@ -932,19 +890,8 @@ font-size: 14rem;
         padding-left: 20px; 
         padding-right: 20px;
     }
-    .float-op{
-        top: -70px;
-        left: 500px;
-    }
-    .browse-el{
-        margin-left: -40px;
-    }
-    .search{
-        margin: -155px -0%;
-       top:30vh;
-        
-        
-    }
+    
+    
     .logo-and-text{
         top: -400px;
         width: auto;
@@ -966,7 +913,5 @@ font-size: 14rem;
         left: 605px;
         border-radius: 3px 0 0 3px;
       }
-      .p-grid{
-        margin-left: 70px;
-      }
+      
 }
