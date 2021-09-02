@@ -3,6 +3,10 @@
     padding:0;
    
 }
+a{
+  text-decoration:none;
+ color: #BDBDBD;
+}
 body{
     background-color: #000000;
     color: #BDBDBD;
@@ -10,6 +14,7 @@ body{
     overflow-x: hidden;
     height:150vh
 }
+
 /* nav headiing */
 .fixed-div{
 background-color: #111111;
@@ -48,6 +53,9 @@ left: 50px;
     margin: 25px 10px;
 
 }
+.dropdown p:hover{
+font-weight: bolder; color: white;
+}
 .browse-el{
     display: none;
 }
@@ -57,9 +65,7 @@ left: 50px;
    top: -37px;
     left:-120px;
 }
-.search-div{
-    border: 3px solid green;
-}
+
 .search{
     margin: 0 auto;
    top:38px;
@@ -215,7 +221,7 @@ margin-left: 10px;
   
 }
 .between-img{
-    height: 70vh;
+    height: 530px;
     width: 100%;
     
 }
@@ -278,7 +284,7 @@ width: 95px;
 .all-drama{
     background-color: #141414;
     position: relative;
-    top: -540px;
+    top: -640px;
     
 }
 /* drama collection */
@@ -302,7 +308,8 @@ width: 95px;
 .all-movie-div img{
     border-radius: 4px;
     margin-left: 5px;
-    width: 250px;
+  
+   
 }
 .second-all-movie-div{
     display: flex;
@@ -367,7 +374,7 @@ width: 95px;
 .second-all-movie-div img{
     border-radius: 4px;
     margin-left: 6px;
-    width: 250px;
+    
 }
 .second-div-width{
     width: 100%;
@@ -388,11 +395,11 @@ width: 95px;
 }
 .second-div-list img{
     border-radius: 4px;
-    margin-left: 6px;
-    width: 250px;
+   margin-left:10px
 }
 .second-div-list{
     display: flex;
+ 
 }
 .list-div-width{
     width: 100%;
@@ -411,6 +418,7 @@ width: 95px;
     border-radius: 4px;
     margin-left: 6px;
     height: 450px;
+  
 }
 .netflix-div-width{
     width: 100%;
@@ -438,7 +446,7 @@ width: 95px;
 .top10-all-movie-div img{
     border-radius: 4px;
     margin-left: 80px;
-    width: 120px;
+    width: 150px;
 }
 .top10-div-width{
     width: 100%;
@@ -621,6 +629,7 @@ font-size: 14rem;
   .div-number-four img{
     position: relative;
     margin: -105px 0 0 175px;
+   
 }
   .number-four {
     width: 35px;
@@ -743,36 +752,7 @@ font-size: 14rem;
     margin: 100px;
     border-left-width: 2px;
   }
-    /* border:25px solid #4E4E4E;
-    width: 80px;
-    height: 90px;
-    border-radius: 50%;
-    position: relative;
-    left: -95px;
-    top: -15px;
-    margin: 100px;
-    border-left-width: 2px;
-    
-    
-    
-  }
-  .number-six::before{
-    width: 43px;
-    height: 105px;
-    border: 22px solid #4E4E4E;
-    border-bottom-color: transparent;
-    border-top-color: transparent;
-    border-top-width: 30px;
-    border-left-color: transparent;
-    transform: rotate(-180deg);
-    margin-left: 100px;
-    content: "";
-    position: absolute;
-    left: -103px;
-    top: -95px;
-    border-radius: 20px 20px 70px 15px;
    
-  } */
   /* Number Seven */
   .div-number-7{
     position: relative;
@@ -829,7 +809,10 @@ font-size: 14rem;
       margin-left: 10px;
       font-size: large;
   }
-  
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
 /* media quries */
 @media (max-width: 768px) {
     .dropdown{
@@ -891,7 +874,11 @@ font-size: 14rem;
         padding-right: 20px;
     }
     
-    
+    .between-img{
+        height: 410px;
+        
+        
+    }
     .logo-and-text{
         top: -400px;
         width: auto;
@@ -902,16 +889,67 @@ font-size: 14rem;
      height: 20vh;
     }
     .ratin-div{
-        margin-left: 600px;
-        top: -455px;
+        top: -465px;
     }
     
     .all-drama{
-        top: -360px;;
+        top: -400px;
     } 
     .next {
         left: 605px;
-        border-radius: 3px 0 0 3px;
+        
+      }
+     
+}
+
+@media (max-width: 400px) {
+    body{
+        font-size: small;
+       width: 100%;
+    }
+    .logo{
+        margin-left: 30px;
+    
+        
+    }
+    .dropdown2 {
+        left:-50px;
       }
       
+.browse-el{
+    margin-left: -120px;
+}
+.dropdown-content{
+   left:  -190px;
+    
+}
+.dropdown-content2 {
+    min-width: 220px;
+   
+  }
+.float-op{
+  left: -100px; 
+    
+}
+.user-img{
+    left: 10px; 
+}
+.next {
+   left: 180px;
+  }
+  .sec-next{
+    left: 230px;
+    top: 25px;
+}
+.title-logo{
+margin-top: 20px;
+}
+.logo-and-text{
+    margin-left: 20px
+}
+.grid-container {
+    grid-template-columns: auto auto;
+    
+  }
+
 }
