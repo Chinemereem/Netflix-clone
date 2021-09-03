@@ -355,7 +355,7 @@ width: 95px;
   }
   
   .next {
-    left: 1300px;
+   float: right;
     border-radius: 3px 0 0 3px;
   }
   
@@ -895,10 +895,7 @@ font-size: 14rem;
     .all-drama{
         top: -400px;
     } 
-    .next {
-        left: 605px;
-        
-      }
+    
      
 }
 
@@ -934,9 +931,7 @@ font-size: 14rem;
 .user-img{
     left: 10px; 
 }
-.next {
-   left: 180px;
-  }
+
   .sec-next{
     left: 230px;
     top: 25px;
